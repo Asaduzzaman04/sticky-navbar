@@ -40,3 +40,19 @@ btn4.addEventListener("mouseover", (e) =>{
 })
 
 // sticky-nav-bar-section \\
+const navbar = document.getElementById('navbar');
+
+const div1 = document.getElementById("div1")
+
+const div1mes = div1.offsetTop;
+
+const div2 = document.getElementById("div2")
+
+window.addEventListener("scroll", () =>{
+    if(window.scrollY >  div1mes){
+        navbar.classList.add('change')
+    }else{
+        navbar.classList.remove('change')
+    }
+})
+
