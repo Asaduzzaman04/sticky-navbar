@@ -53,8 +53,8 @@
 a::before{
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: var(--pageT);
+    left: var(--pageL);
     transform: translate(-50%, -50%);
     transition: all .3s linear;
     width: 0px;
